@@ -32,11 +32,11 @@ netstat -tap | grep memcached
 ss –tlpn
 ```
 
-![screen1](https://github.com/KorolkovDenis/)
+![screen1](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen1.jpg)
 
 Убедимся, что memcached запущен командой: systemctl status memcached.
 
-![screen2](https://github.com/KorolkovDenis/)
+![screen2](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen2.jpg)
 
 
 Задание 3. Удаление по TTL в Memcached
@@ -50,7 +50,7 @@ ss –tlpn
 
 telnet localhost 11211
 
-![screen4](https://github.com/KorolkovDenis/)
+![screen4](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen4.jpg)
 
 Для того, чтобы сохранить данные, используется команда add. У неё такой синтаксис:
 
@@ -59,7 +59,7 @@ add имя_ключа флаги время_хранения размер_дан
 
 Записываю в memcached несколько ключей, для которых выставлен TTL 5
 
-![screen3](https://github.com/KorolkovDenis/)
+![screen3](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen3.jpg)
 
 При проверке ключей через 5 секунд они пропадают с кеша.
 
@@ -80,19 +80,19 @@ apt install redis
 
 systemctl status redis
 
-![screen5](https://github.com/KorolkovDenis/)
+![screen5](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen5.jpg)
 
 Идем в redis-CLI
 
-![screen6](https://github.com/KorolkovDenis/)
+![screen6](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen6.jpg)
 
 Ввожу несколько ключей и значений в Redis:
 
-![screen7](https://github.com/KorolkovDenis/)
+![screen7](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen7.jpg)
 
 Достаю все записанные ключи и значения из базы:
 
-![screen8](https://github.com/KorolkovDenis/)
+![screen8](https://github.com/KorolkovDenis/11.2-redis_memcached/blob/main/screenshots/screen8.jpg)
 
 Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже разобраться в материале.
@@ -104,6 +104,4 @@ systemctl status redis
 
 
 
-
-
-[Моя работа по «Кеширование Redis/memcached»](https://docs.google.com/document/)
+[Моя работа по «Кеширование Redis/memcached»](https://docs.google.com/document/d/1KqfLxv4WqHWxIUg3Z9cTyiKfjaygHxlL/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
